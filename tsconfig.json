@@ -21,14 +21,16 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "target": "es5"
   },
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "src/app/page.js"  ],
+    "**/*.tsx",
+    "src/app/page.js"
+  ],
   "exclude": [
     "node_modules"
   ]
