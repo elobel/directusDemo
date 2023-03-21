@@ -25,12 +25,11 @@ const Contacts = (props) => {
     setFirstNameValue(event.target.value)
   }
 
-  async function submitHandler(e) {
+  async function submitHandler() {
     await directus.items('contacts').updateOne(1, {
       first_name: firstNameValue,
     });
   };
-
 
   function displayContacts() {
     return (
@@ -45,7 +44,6 @@ const Contacts = (props) => {
       })}
       </ul>
     )
-
   }
 
   let displayedContacts = displayContacts()
